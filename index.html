@@ -1,9 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coface Türkiye</title>
+  <meta name="description" content="Coface Türkiye - Ticari sigorta, ticari raporlar ve global destek hizmetleri. Şirketinizin finansal risklerini yönetin." />
+  <meta name="keywords" content="sigorta, ticari sigorta, sigorta çözümleri, Türkiye, risk yönetimi" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.cofacesigorta.com/" />
+  <meta property="og:title" content="Coface Türkiye - Sigorta Çözümleri" />
+  <meta property="og:description" content="Ticari sigorta, raporlar ve global destek hizmetleri ile işletmenizi koruyun." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cofacesigorta.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Coface Türkiye - Sigorta Çözümleri" />
+  <meta name="twitter:description" content="Ticari sigorta, raporlar ve global destek hizmetleri ile işletmenizi koruyun." />
+  <title>Coface Türkiye - Sigorta Çözümleri ve Destek Hizmetleri</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Coface Türkiye",
+    "image": "https://images.unsplash.com/photo-1581092334607-c31b1a33d0f2?auto=format&fit=crop&w=1600&q=80",
+    "description": "Ticari sigorta, ticari raporlar ve global destek hizmetleri sunan sigorta şirketi.",
+    "url": "https://www.cofacesigorta.com/",
+    "areaServed": "TR",
+    "serviceType": ["Ticari Sigorta", "Ticari Raporlar", "Global Destek"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Coface Türkiye",
+    "url": "https://www.cofacesigorta.com/",
+    "logo": "https://www.cofacesigorta.com/logo.png",
+    "description": "Coface Türkiye - Sigorta çözümleri ve global destek hizmetleri",
+    "foundingDate": "2000",
+    "areaServed": "TR",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "availableLanguage": ["tr", "en"]
+    }
+  }
+  </script>
   <style>
     /* ---------- GLOBAL STYLES ---------- */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -147,6 +187,15 @@
       flex-direction: column;
       gap: 1rem;
     }
+    form > div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    form label {
+      font-weight: 500;
+      color: #0f172a;
+    }
     input, textarea {
       width: 100%;
       padding: 0.8rem;
@@ -251,6 +300,7 @@
         <div class="logo">coface</div>
         <ul>
           <li><a href="#about">Hakkımızda</a></li>
+          <li><a href="#services">Hizmetler</a></li>
           <li><a href="#contact">Bize Ulaşın</a></li>
         </ul>
       </nav>
@@ -259,24 +309,32 @@
 
   <section class="hero">
     <h1>Sigorta çözümleriniz</h1>
-    <a href="#services" class="btn">Burada</a>
+    <p>Coface Türkiye ile işletmenizi finansal risklerden koruyun</p>
+    <a href="#services" class="btn">Hizmetler</a>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Hakkımızda</h2>
+      <p>Coface Türkiye, güvenilir sigorta çözümleri ve ticari raporlama hizmetleriyle işletmelerin finansal risklerini yönetmesine yardımcı olur. Uluslararası deneyimimiz ve yerel uzmanlığımız, müşterilerimizin başarısı için kapsamlı koruma sağlar.</p>
+    </div>
   </section>
 
   <section id="services" class="services">
     <div class="container">
-      <h2 style="text-align:center;"></h2>
+      <h2 style="text-align:center;">Hizmetlerimiz</h2>
       <div class="service-grid">
         <div class="service-card">
           <h3>Ticari Sigorta</h3>
-          <p>.</p>
+          <p>İşletmenizin özel ihtiyaçlarına yönelik kapsamlı sigorta çözümleri. Mal, sorumluluk ve çalışan sigortalarında güvenilir koruma.</p>
         </div>
         <div class="service-card">
           <h3>Ticari Raporlar</h3>
-          <p>.</p>
+          <p>Detaylı risk analizi ve ticari raporlar ile iş ortaklarınızın finansal durumunu değerlendirin. Karar alma sürecinde güvenilir veri.</p>
         </div>
         <div class="service-card">
           <h3>Global Destek</h3>
-          <p>.</p>
+          <p>Uluslararası operasyonlarınız için 24/7 destek ve koruma. Dünya çapında risk yönetimi ve sigorta çözümleri.</p>
         </div>
       </div>
     </div>
@@ -286,13 +344,19 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Bize Ulaşın</h2>
-      <p>.</p>
+      <p>Sigorta ihtiyaçlarınız hakkında daha fazla bilgi almak için lütfen bize mesaj gönderin. Uzman ekibimiz en kısa sürede sizinle iletişime geçecektir.</p>
 
       <!-- Replace the Formspree URL below with your own form endpoint -->
       <form id="contact-form" action="https://formspree.io/f/mqayreaj" method="POST">
-      <label>Email adresiniz: <input type="email" name="email"> </label>
-      <label>Mesajınız: <textarea name="message"></textarea> </label>
-      <button type="submit">Gönder</button>
+        <div>
+          <label for="email">Email adresiniz:</label>
+          <input id="email" type="email" name="email" required aria-required="true" />
+        </div>
+        <div>
+          <label for="message">Mesajınız:</label>
+          <textarea id="message" name="message" required aria-required="true"></textarea>
+        </div>
+        <button type="submit">Gönder</button>
       </form>
     </div>
 
